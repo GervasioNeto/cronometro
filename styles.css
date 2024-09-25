@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #4A4E69, #9A8C98);
+    color: #F7D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cronometro-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cronometro-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.cronometro-container h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#cronometro {
+    font-size: 4em;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    color: #F7D9D9;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    background: linear-gradient(to right, #FBAF00, #FFCC00);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    color: #000;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(to right, #FFCC00, #FBAF00);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+    background: #D6D6D6;
+    color: #A9A9A9;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
